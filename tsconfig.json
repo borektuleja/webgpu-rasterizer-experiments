@@ -1,0 +1,42 @@
+{
+    "compilerOptions": {
+        "allowImportingTsExtensions": true,
+        "baseUrl": ".",
+        "isolatedModules": true,
+        "lib": [
+            "ES2020",
+            "DOM",
+            "DOM.Iterable"
+        ],
+        "module": "ESNext",
+        "moduleDetection": "force",
+        "moduleResolution": "bundler",
+        "noEmit": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "paths": {
+            "@/*": [
+                "./src/visualizer/*"
+            ],
+            "shader/*": [
+                "./src/shader/*"
+            ],
+            "vertex": [
+                "./src/vertex/"
+            ]
+        },
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "target": "ES2020",
+        "types": [
+            "vite/client",
+            "@webgpu/types"
+        ],
+        "useDefineForClassFields": true
+    },
+    "include": [
+        "src"
+    ]
+}
